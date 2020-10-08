@@ -319,6 +319,15 @@ text color: #BFC0C0 */
     text-align: justify;
 }
 
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs input {
+    width: 100%;
+}
+
 @media (max-width: 900px) {
     .menu-links {
         display: none;
