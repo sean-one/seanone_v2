@@ -89,6 +89,7 @@ text color: #BFC0C0 */
     height: 100vh;
     background-image: url('../imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg');
     background-size: cover;
+    background-attachment: fixed;
     background-color: var(--background-opacity);
     background-blend-mode: overlay;
     opacity: 0.3;
@@ -171,17 +172,27 @@ text color: #BFC0C0 */
     align-items: center;
     position: relative;
     width: 100%;
-    height: 60rem;
+    height: 100%;
     background-color: var(--text-color);
 }
 
 .work-section {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     color: black;
     height: 100%;
-    padding: 2rem 0;
+    padding: 3.5rem 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 /* card wrapper */
@@ -190,10 +201,10 @@ text color: #BFC0C0 */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 70%;
+    width: 36rem;
+    height: 38rem;
     perspective: 600px;
-    /* background-color: purple; */
+    margin: 1rem;
 }
  
 .past-work-card {
@@ -206,11 +217,8 @@ text color: #BFC0C0 */
     border-radius: 0.5rem;
 }
 
-.card-space:hover .past-work-card {
-    transform: rotateY(180deg)
-}
-
 .work-card {
+    margin: 1rem 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -255,8 +263,8 @@ text color: #BFC0C0 */
 
 .card-info {
     background-color: transparent;
-    text-align: justify;
-    line-height: 2;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .card-links {
@@ -266,6 +274,49 @@ text color: #BFC0C0 */
 .github-icon {
     font-size: 2rem;
     margin: 0 0.5rem;
+}
+
+.language-title {
+    padding: 0.5rem;
+    margin: 2rem 0 1rem 0;
+    border-bottom: 0.02rem var(--main-bg-color) solid;
+}
+
+.languages {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--main-bg-color)
+}
+
+.language-link {
+    transition: transform 750ms;
+}
+
+.language-link:hover {
+    transform: scale(1.5);
+}
+
+.contact-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-bg-color)
+}
+
+.contact-title {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-details {
+    padding: 1rem 2.5rem;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 @media (max-width: 900px) {
