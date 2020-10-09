@@ -87,8 +87,15 @@ p {
 	font-size: 1.6rem;
 }
 
+input, textarea {
+	font-size: 1.4rem;
+	font-family: var(--main-font);
+}
+
 h1 {
 	font-size: 2.5rem;
+	font-weight: 600;
+	letter-spacing: 0.07rem;
 }
 
 h2 {

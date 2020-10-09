@@ -20,34 +20,6 @@
     <title>SeanOne | Coachella Valley, CA</title>
 </head>
 <body>
-    <div class="header-wrap">
-        <div class="navigation container">
-            <div class="branding">
-                <h1>SEAN ACKERMAN</h1>
-                <img src="./imgs/seanoneLogo-200x200.png" alt="SeanOne dev logo">
-            </div>
-            <div class="menu">
-                <div class="mobile-menu-wrapper">
-                    <div class="menu-icon">
-                        <i class="fas fa-bars"></i>
-                        <i class="fas fa-times"></i>
-                    </div>
-                    <div class="mobile-menu">
-                        <ul class="mobile-menu-links">
-                            <li>ABOUT</li>
-                            <li>WORK</li>
-                            <li>CONTACT</li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="menu-links">
-                    <li>ABOUT</li>
-                    <li>WORK</li>
-                    <li>CONTACT</li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="about-me container">
         <div class="hero-img"> </div>
         <div class="main-info">
@@ -133,20 +105,30 @@
     <div class="contact-section-wrapper">
         <div class="contact-section container">
             <div class="contact-title">
-                <h2>Lets build something!</h2>
+                <h1>Lets build something!</h1>
             </div>
             <div class="contact-details">
-                <p>Do you have an app idea or a business that needs a website.  I have experience building everything from small business sites to rich interactive web apps.  Contact me via the form below or give me a call at (760) 262-4108.</p>
-            </div>
-            <div class="contact-form">
-                <form class="form-inputs" action="">
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="tel" name="phone" id="phone" placeholder="(555)123-4567">
-                    <input type="text" name="message" id="message" placeholder="Message">
-                </form>
+                <div class="contact-cta">
+                    <p>Do you have an idea for an app or a business that needs digital presence.  I have experience building everything from small business sites to rich interactive web apps.  Contact me via the form below or give me a call at (760) 262-4108.</p>
+                </div>
+                <div class="contact-form">
+                    <form id="main-form" class="form-inputs">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="phone"></label>
+                        <input type="tel" name="phone" id="phone" placeholder="(555)123-4567">
+                        <label for="message"></label>
+                        <textarea type="text" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <p>Sean Ackerman 2020</p>
     </div>
     <script src="./js/index.js"></script>
 </body>
