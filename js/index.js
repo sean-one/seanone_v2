@@ -28,4 +28,8 @@ const form_message = document.getElementById("message");
 contact_form.addEventListener('submit', event => {
     event.preventDefault();
     console.log(form_name.value, form_email.value, form_phone.value, form_message.value);
+    form_name.value = "";
+    form_email.value = "";
+    form_phone.value = "";
+    form_message.value = "";
 })
