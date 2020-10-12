@@ -17,19 +17,3 @@ lambda_times.parentNode.addEventListener('click', event => {
         lambda_times.style.transform = "";
     }
 });
-
-const contact_form = document.getElementById("main-form");
-const form_name = document.getElementById("name");
-const form_email = document.getElementById("email");
-const form_phone = document.getElementById("phone");
-const form_message = document.getElementById("message");
-
-
-contact_form.addEventListener('submit', event => {
-    event.preventDefault();
-    console.log(form_name.value, form_email.value, form_phone.value, form_message.value);
-    form_name.value = "";
-    form_email.value = "";
-    form_phone.value = "";
-    form_message.value = "";
-})

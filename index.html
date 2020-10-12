@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="./css/style-reset.css">
     <link rel="stylesheet" href="./css/main-styles.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156349892-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156349892-1');
+    </script>
+
     <script src="https://kit.fontawesome.com/4c370408da.js" crossorigin="anonymous"></script>
 
     <title>SeanOne | Coachella Valley, CA</title>
@@ -114,13 +124,13 @@
                 <div class="contact-form">
                     <form id="main-form" class="form-inputs">
                         <label for="name"></label>
-                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
                         <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
                         <label for="phone"></label>
                         <input type="tel" name="phone" id="phone" placeholder="(555)123-4567">
                         <label for="message"></label>
-                        <textarea type="text" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea type="text" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                         <input type="submit" value="Submit">
                     </form>
                 </div>
@@ -131,5 +141,6 @@
         <p>Sean Ackerman 2020</p>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/xhr.js"></script>
 </body>
 </html>

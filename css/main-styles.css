@@ -283,7 +283,7 @@ input[type=submit] {
     background-color: var(--text-color);
     color: var(--main-bg-color);
     padding: 0.75rem 0;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .footer p::before {
