@@ -141,11 +141,8 @@ text color: #BFC0C0 */
     height: 100%;
     position: relative;
     transition: transform 1750ms;
-    -webkit-transition: transform;
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
     border-radius: 0.5rem;
-    /* background-color: red; */
 }
 
 .work-card {
@@ -283,6 +280,7 @@ text color: #BFC0C0 */
 }
 
 input[type=submit] {
+    border-radius: 0.75rem;
     background-color: var(--main-bg-color);
     border: 0.02rem solid var(--text-color);
     color: var(--main-color);
