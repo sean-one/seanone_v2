@@ -110,8 +110,10 @@ text color: #BFC0C0 */
 
 .cards {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-around;
     align-items: center;
+    -webkit-box-align: center;
     flex-wrap: wrap;
     position: relative;
     width: 100%;
@@ -138,11 +140,12 @@ text color: #BFC0C0 */
     height: 100%;
     position: relative;
     transition: transform 1750ms;
-    -webkit-transition: transform 1750ms;
+    -webkit-transition: transform;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     background-color: #f9f9f9;
     border-radius: 0.5rem;
+    /* background-color: red; */
 }
 
 .work-card {
@@ -192,7 +195,7 @@ text color: #BFC0C0 */
 .card-back {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
-    /* background: blue; */
+    background: blue;
 }
 
 .card-info {
