@@ -12,7 +12,6 @@ lambda_ui.parentNode.addEventListener('click', event => {
 lambda_times.parentNode.addEventListener('click', event => {
     if (!lambda_times.style.transform) {
         lambda_times.style.transform = "rotateY(180deg)";
-        lambda_times.style["-webkit-transform"] = "rotateY(180deg)";
     } else {
         lambda_times.style.transform = "";
     }
