@@ -151,6 +151,7 @@ text color: #BFC0C0 */
 }
 
 .past-work-thumbnail img {
+    display: block;
     max-width: 100%;
 }
 
