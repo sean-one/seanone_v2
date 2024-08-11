@@ -1,20 +1,15 @@
-const lambda_ui = document.getElementById('lambda-ui');
-const lambda_times = document.getElementById('lambda-times');
-const more_info = document.getElementsByClassName('more-info');
+const tat_2_javi_link = document.getElementById('tat2javi');
+const cafecito_link = document.getElementById('cafecito');
+const cvsc_link = document.getElementById('cvsc')
 
-lambda_ui.parentNode.addEventListener('click', event => {
-    if (!lambda_ui.style.transform) {
-        lambda_ui.style.transform = "rotateY(180deg)";
-    } else {
-        lambda_ui.style.transform = "";
-    }
-});
+tat_2_javi_link.addEventListener('click', event => {
+    window.open("https://tat2javi.com", "_blank")
+})
 
-lambda_times.parentNode.addEventListener('click', event => {
-    if (!lambda_times.style.transform) {
-        lambda_times.style.transform = "rotateY(180deg)";
-        lambda_times.style["-webkit-transform"] = "rotateY(180deg)";
-    } else {
-        lambda_times.style.transform = "";
-    }
-});
+cafecito_link.addEventListener('click', event => {
+    window.open("https://cafecitothebrand.com", "_blank")
+})
+
+cvsc_link.addEventListener('click', event => {
+    window.open("https://coachellavalleysmokersclub.com", "_blank")
+})
