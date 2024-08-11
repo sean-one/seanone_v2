@@ -104,18 +104,14 @@ h2 {
 
 * {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
 
 .container {
-    /* background-color: red; */
-	width: 71.5%;
-	max-width: 110rem;
+	width: 110rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 	.container {
 		width: 100%;
-		max-width:100%;
 	}
 }
